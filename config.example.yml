@@ -1,0 +1,27 @@
+server:
+  port: 3000 # default
+  trust-proxy: false # default
+  # trust-proxy: true # trust all X-FORWARDED-FOR
+  # trust-proxy: loopback # trust loopback (localhost)
+  # trust-proxy: # it can be an array
+  #   - 127.0.0.1
+  #   - 192.168.1.1
+  # accesslog: "path/to/log"
+  prefix: "/" # default
+  # prefix: "/api"
+  # listen: "::" # default
+  listen: "::1"
+  # listen: "localhost"
+
+cors:
+  enable: true # default
+  # origin: "*" # default
+  # origin: "test" # always return "test" as header
+  # origin: true # accept all origins
+  # origin: false # remove origin header
+  # origin:
+  #   - https://example.com
+  #   - regex: 'https?://example\.com(/test)?'
+
+# loglevel: "error"
+# logfile: "path/to/app/log" # if missing, log to stdout
